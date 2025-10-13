@@ -101,11 +101,21 @@ Make sure you have the following installed:
 
 ## Demo / Screenshot
 
+### Home section
 <img width="1895" height="992" alt="src1" src="https://github.com/user-attachments/assets/e5dfbe77-d684-4122-8e9c-e75abfc43c52" />
+
+### Course section
 <img width="1814" height="998" alt="src2" src="https://github.com/user-attachments/assets/3d70eee6-ad48-4854-ae8d-1175ec4dc7e2" />
+### About section
 <img width="1920" height="966" alt="src3" src="https://github.com/user-attachments/assets/fc1e6699-e25c-4696-8ad0-d507afdfeed4" />
+
+### Contact section
 <img width="1920" height="991" alt="src4" src="https://github.com/user-attachments/assets/47593060-cc00-41ce-a9d9-6fce49343554" />
+
+### Enroll course section
 <img width="1920" height="994" alt="src5" src="https://github.com/user-attachments/assets/46e694de-e595-4ea0-95e4-dfe58a2cec7b" />
+
+### course content section
 <img width="1645" height="996" alt="src6" src="https://github.com/user-attachments/assets/f2a3a622-7e54-4498-8a1c-95e9b626031d" />
 
 
