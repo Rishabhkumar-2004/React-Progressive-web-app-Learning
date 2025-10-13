@@ -1,0 +1,156 @@
+/* ========================
+   Navbar Container
+======================== */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif; /* Added font family */
+
+}
+
+
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========================
+   Logo
+======================== */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  background: #2563eb;
+  color: #fff;
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+/* ========================
+   Links
+======================== */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #e0ebff;
+  color: #2563eb;
+}
+
+/* ========================
+   Buttons
+======================== */
+.nav-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Hide mobile button by default */
+.mobile-btn {
+  display: none;
+}
+
+/* ========================
+   Hamburger Icon
+======================== */
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ========================
+   Responsive Design
+======================== */
+@media (max-width: 900px) {
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  /* Hide desktop button */
+  .desktop-btn {
+    display: none;
+  }
+
+  /* Hamburger visible */
+  .hamburger {
+    display: block;
+    z-index: 1100;
+  }
+
+  /* Links hidden by default */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    padding: 1.5rem 0;
+    border-top: 1px solid #eee;
+  }
+
+  /* Show when menu open */
+  .nav-links.open {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  /* Mobile button inside dropdown */
+  .mobile-btn {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+/* Slide animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
